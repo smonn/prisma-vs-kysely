@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "@tsconfig/strictest",
+    "@tsconfig/node20",
+    "@tsconfig/recommended"
+  ],
+  "include": [
+    "src/**/*"
+  ],
+  "compilerOptions": {
+    "module": "ES2022",
+    "moduleResolution": "Bundler"
+  }
+}

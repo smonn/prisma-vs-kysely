@@ -1,0 +1,23 @@
+{
+  "name": "prisma-kysely",
+  "type": "module",
+  "scripts": {},
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.2",
+    "@tsconfig/recommended": "^1.0.3",
+    "@tsconfig/strictest": "^2.0.2",
+    "@types/node": "^20.10.4",
+    "@types/pg": "^8.10.9",
+    "kysely-codegen": "^0.11.0",
+    "prisma": "^5.7.0",
+    "tsx": "^4.6.2"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.7.0",
+    "dotenv": "^16.3.1",
+    "kysely": "^0.26.3",
+    "kysely-postgres-js": "^2.0.0",
+    "pg": "^8.11.3",
+    "postgres": "^3.4.3"
+  }
+}
