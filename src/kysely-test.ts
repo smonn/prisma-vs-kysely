@@ -56,12 +56,13 @@ async function main() {
       ).as("actors"),
     ]);
 
-  console.log(latestFilmsQuery.compile().sql);
+  // console.log(latestFilmsQuery.compile().sql);
 
   const latestFilms = await latestFilmsQuery.execute();
+  const diff = performance.now() - now;
 
   console.log(latestFilms[0]);
-  console.log("Query took", performance.now() - now, "ms");
+  console.log("Query took", diff, "ms");
 
   await kysely.destroy();
 }

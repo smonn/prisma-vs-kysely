@@ -32,9 +32,10 @@ async function main() {
   });
 
   const latestFilms = await latestFilmsQuery;
+  const diff = performance.now() - now;
 
   console.log(latestFilms[0]);
-  console.log("Query took", performance.now() - now, "ms");
+  console.log("Query took", diff, "ms");
 
   await prisma.$disconnect();
 }

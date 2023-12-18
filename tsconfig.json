@@ -5,7 +5,8 @@
     "@tsconfig/recommended"
   ],
   "include": [
-    "src/**/*"
+    "src/**/*",
+    "drizzle.config.ts"
   ],
   "compilerOptions": {
     "module": "ES2022",
